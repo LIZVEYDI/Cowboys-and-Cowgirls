@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cowboys and Cowgirls</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0e5d8;
+            color: #3e2723;
+            line-height: 1.6;
+        }
+        header {
+            background: url('path/to/wood-texture.jpg') no-repeat center center;
+            background-size: cover;
+            color: #fff;
+            text-align: center;
+            padding: 60px 20px;
+            position: relative;
+            border-bottom: 5px solid #8b4513;
+        }
+        header h1 {
+            font-size: 4em;
+            margin: 0;
+            padding: 20px;
+            background-color: #6f4f28;
+            border-radius: 10px;
+            display: inline-block;
+            position: relative;
+            z-index: 1;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+            transform: rotate(-2deg);
+        }
+        header img {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 80px;
+            height: auto;
+        }
+        .main-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 15px;
+            margin: 20px auto;
+            display: block;
+        }
+        section {
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 15px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+        h2 {
+            font-size: 2em;
+            color: #8b4513;
+            border-bottom: 3px solid #d2b48c;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+            display: inline-block;
+        }
+        h3 {
+            font-size: 1.4em;
+            color: #8b4513;
+            cursor: pointer;
+            margin: 0;
+            padding: 10px 0;
+            background-color: #d2b48c;
+            border-radius: 5px;
+            display: inline-block;
+            transition: background-color 0.3s;
+        }
+        h3:hover {
+            background-color: #c49a6c;
+        }
+        .content {
+            display: none;
+            padding: 10px;
+            text-align: left;
+            margin: 10px 0;
+        }
+        p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            color: #555;
+            padding: 10px 0;
+        }
+        .highlight {
+            background-color: #d2b48c;
+            padding: 10px;
+            border-radius: 5px;
+            color: #3e2723;
+            display: inline-block;
+            margin: 5px 0;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 1em;
+            color: #fff;
+            background-color: #8b4513;
+            text-decoration: none;
+            border-radius: 5px;
+            border: 2px solid #d2b48c;
+            transition: background-color 0.3s, color 0.3s;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            margin: 10px;
+        }
+        .btn:hover {
+            background-color: #d2b48c;
+            color: #3e2723;
+        }
+        .btn-container {
+            text-align: center;
+            margin: 20px auto;
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var sections = document.querySelectorAll('h3');
+            sections.forEach(function(section) {
+                section.addEventListener('click', function() {
+                    var content = this.nextElementSibling;
+                    if (content.style.display === 'block') {
+                        content.style.display = 'none';
+                    } else {
+                        content.style.display = 'block';
+                    }
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <img src="C:\Users\EXCLUSIVO\Downloads\icono.png" alt="Sombrero Vaquero">
+        <h1>Cowboys and Cowgirls</h1>
+    </header>
+
+    <section>
+        <img src="C:\Users\EXCLUSIVO\Downloads\WhatsApp Image 2024-07-21 at 10.58.49 PM.jpeg" alt="Imagen de Cowboys and Cowgirls" class="main-image">
+    </section>
+
+
+    <section>
+        <h2>"Vaqueros que cuentan historias, moda que crea memorias."</h2>
+    </section>
+
+    <section>
+        <h2>Filosofía de la empresa</h2>
+
+        <h3>Misión</h3>
+        <div class="content">
+            <p>Cowboys and Cowgirls tiene como misión comprometerse a ofrecer una mejor experiencia de compra para hombres y mujeres. Para ello, la empresa se centrará en ofrecer una selección exclusiva de prendas de alta calidad y estilo distintivo, especialmente se promoverá la marca American Fighter, que no es ampliamente reconocida en la región de Tulancingo, esto con el fin de atraer nuevos clientes y una creciente demanda de ropa vaquera.</p>
+        </div>
+
+        <h3>Visión</h3>
+        <div class="content">
+            <p>La empresa Cowboys and Cowgirls tiene como visión convertirse en una tienda de ropa vaquera en Tulancingo, ofreciendo una selección exclusiva que no se encuentra fácilmente en la región de prendas de alta calidad y estilos diferentes para hombres y mujeres. Cowboys and Cowgirl pretende centrarse especialmente en la promoción de la marca American Fighter para satisfacer la creciente demanda de este estilo de ropa.</p>
+        </div>
+
+        <h3>Políticas</h3>
+        <div class="content">
+            <p>La empresa Cowboys and Cowgirls tiene las siguientes políticas:<br>
+                <span class="highlight">1. Política de Comportamiento con los clientes:</span> Ser amables y respetuosos con los clientes.<br>
+                <span class="highlight">2. Política de Horarios:</span> Respetar horarios de entrada y salida.<br>
+                <span class="highlight">3. Política de Mantenimiento:</span> Mantener siempre limpia la tienda.<br>
+                <span class="highlight">4. Política de Privacidad:</span> Privacidad en los vestuarios.
+            </p>
+        </div>
+
+        <h3>Valores</h3>
+        <div class="content">
+            <p>La empresa Cowboys and Cowgirls se basa en los siguientes valores:<br>
+                <span class="highlight">1. Calidad:</span> La empresa se compromete a ofrecer productos de alta calidad a sus clientes.<br>
+                <span class="highlight">2. Servicio al cliente:</span> La empresa se compromete a ofrecer un excelente servicio a sus clientes.<br>
+                <span class="highlight">3. Respeto:</span> La empresa se compromete a tener un ambiente de respeto tanto para empleados como para clientes.<br>
+                <span class="highlight">4. Estilo:</span> La empresa se compromete a ofrecer productos con estilo y moda.
+            </p>
+        </div>
+    </section>
+
+    <section>
+        <h2>Plan de gestión de Recursos Humanos</h2>
+
+        <section>
+            <img src="C:\Users\EXCLUSIVO\Downloads\WhatsApp Image 2024-07-22 at 10.52.20 AM.jpeg" alt="Imagen de Cowboys and Cowgirls" class="main-image">
+        </section>
+    </section>
+
+
+    <section>
+        <h2>Productos</h2>
+
+        <h4>Playeras American Fighter</h4>
+        <p>¡Atrévete a elevar tu estilo con las auténticas playeras de American Fighter! Inspiradas en el espíritu audaz del Viejo Oeste, nuestras playeras combinan un diseño robusto con la comodidad moderna. Con gráficos llamativos que evocan la esencia del vaquero y una confección de alta calidad, están hechas para resistir tanto las pruebas de tus entrenamientos más intensos como las aventuras diarias. Hechas con materiales de primera, cada playera ofrece un ajuste cómodo y una durabilidad inigualable. ¡Vístete con la fuerza y el estilo de un verdadero vaquero con American Fighter!</p>
+
+        <h4>Pantalones American Fighter</h4>
+        <p>¡Completa tu look con los pantalones de American Fighter, ideales para el aventurero moderno con un toque vaquero! Estos pantalones están diseñados para ofrecer la máxima comodidad sin sacrificar el estilo. Perfectos para tus salidas diarias, combinan la funcionalidad de un atuendo de trabajo con la elegancia del estilo vaquero. Con materiales flexibles y resistentes, te permiten moverte con total libertad mientras mantienes una apariencia impecable y auténtica. ¡Siente el espíritu del vaquero en cada paso con American Fighter!.</p>
+    </section>
+
+    <section>
+        <p>¡No esperes más! Visita nuestra tienda en línea y encuentra la playera y los pantalones perfectos para ti. Con American Fighter, no solo vistes bien, ¡también te sientes imparable!</p>
+    </section>
+
+    <section class="info-section">
+        <a href="productos.html" class="btn">Más Información</a>
+        <a href="contactanos.html" class="btn">Contáctanos</a>
+        <a href="Cowboys and Cowgirls.html" class="btn">Regresar</a>
+    </section>
+</body>
+</html>
+
+

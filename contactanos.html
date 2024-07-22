@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contáctanos - Cowboys and Cowgirls</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0e5d8;
+            color: #3e2723;
+            line-height: 1.6;
+        }
+        header {
+            background: url('path/to/wood-texture.jpg') no-repeat center center;
+            background-size: cover;
+            color: #fff;
+            text-align: center;
+            padding: 60px 20px;
+            border-bottom: 5px solid #8b4513;
+        }
+        header h1 {
+            font-size: 4em;
+            margin: 0;
+            padding: 20px;
+            background-color: #6f4f28;
+            border-radius: 10px;
+            display: inline-block;
+            position: relative;
+            z-index: 1;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+            transform: rotate(-2deg);
+        }
+        header img {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 80px;
+            height: auto;
+        }
+        section {
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 15px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+        h2 {
+            font-size: 2em;
+            color: #8b4513;
+            border-bottom: 3px solid #d2b48c;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+            display: inline-block;
+        }
+        p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            color: #555;
+            padding: 10px 0;
+        }
+        .contact-form {
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: left;
+            max-width: 600px;
+        }
+        .contact-form label {
+            display: block;
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            margin-bottom: 15px;
+        }
+        .contact-form button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 1em;
+            color: #fff;
+            background-color: #8b4513;
+            text-decoration: none;
+            border-radius: 5px;
+            border: 2px solid #d2b48c;
+            transition: background-color 0.3s, color 0.3s;
+            margin-top: 10px;
+        }
+        .contact-form button:hover {
+            background-color: #d2b48c;
+            color: #3e2723;
+        }
+        .btn-container {
+            text-align: center;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="C:\Users\EXCLUSIVO\Downloads\WhatsApp Image 2024-07-21 at 10.58.49 PM.jpeg" alt="Sombrero Vaquero">
+        <h1>Cowboys and Cowgirls</h1>
+    </header>
+
+    <section>
+        <h2>Contáctanos</h2>
+        <p>Si tienes alguna pregunta o deseas obtener más información sobre nuestros productos, no dudes en ponerte en contacto con nosotros. Estaremos encantados de ayudarte.</p>
+        
+        <div class="contact-form">
+            <form action="submit_form.php" method="post">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="info-section">
+        <a href="Cowboys and Cowgirls.html" class="btn">Regresar</a>
+        <a href="productos.html" class="btn">Más Información</a>
+    </section>
+</body>
+</html>
